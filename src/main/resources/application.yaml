@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: imobiliaria
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/imobiliaria
+    username: imobiliaria
+    password: imobiliaria
+
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
+  data:
+    web:
+      pageable:
+        max-page-size: 50
+
+server:
+  port: 8081
+  error:
+    include-stacktrace: never
+    include-message: never
